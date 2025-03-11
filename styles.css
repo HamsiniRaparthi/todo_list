@@ -1,0 +1,106 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("images/todolistimage.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: left;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-btn:hover {
+    background-color: darkgreen;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Ensures alignment to the left */
+}
+
+li {
+    display: flex;
+    align-items: left; /* Align items in a row */
+    gap: 20px; /* Space between checkbox and text */
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and task text */
+    transform: scale(1.2); /* Slightly increase checkbox size */
+}
+li {
+    display: flex;
+    align-items: left;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-checkbox {
+    margin-right: 10px; /* Ensures checkbox is properly aligned */
+    transform: scale(1.2); /* Optional: Makes checkbox larger */
+}
+
+.task-text {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
